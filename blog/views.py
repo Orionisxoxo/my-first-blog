@@ -1,4 +1,7 @@
 from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
+from django.views import generic
 from django.utils import timezone
 from .models import Post
 from .forms import PostForm
